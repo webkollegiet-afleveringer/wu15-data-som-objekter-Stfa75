@@ -24,7 +24,7 @@ let mig = {
         Type: "snail"
     }
 }
-console.log(mig.hobbies);
+
 
 mig.hobbies.forEach(function (hobby) {
     console.log(hobby)
