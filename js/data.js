@@ -19,7 +19,7 @@ let services = [
         headline: "Additional services designed for the needs of campers",
         text: "Travelling often means that you dont have time to organise excursions along your route. EasyCamper takes care of that!",
         linktext: "Discover the Guided Tours and additional services that you can link to your structure"
-    }, 
+    },
     {
         illustration: "https://dazzling-squirrel-77a63d.netlify.app/imgs/illustrations/destination.png",
         headline: "Free online showcase with promotion in Italy and abroad",
@@ -30,7 +30,7 @@ let services = [
 
 let facilities = {
     headline: "Making your facility known is our priority",
-    options : [
+    options: [
         {
             icon: "https://dazzling-squirrel-77a63d.netlify.app/imgs/icons/list-check.png",
             headline: "Choose the type of stop",
@@ -79,20 +79,58 @@ let sites = {
 
 let advantages = [
     {
-        icon:"https://dazzling-squirrel-77a63d.netlify.app/imgs/icons/compare.png",
+        icon: "https://dazzling-squirrel-77a63d.netlify.app/imgs/icons/compare.png",
         headline: "Convenience and Transparency",
         text: "You don’t have to find out later or only after camenierk and trarsparent Easyamper ratains pliacas and beautias of your tariaary and halpin a fixed commission on each transaction of 5"
     },
     {
-        icon:"https://dazzling-squirrel-77a63d.netlify.app/imgs/icons/library_books.png",
+        icon: "https://dazzling-squirrel-77a63d.netlify.app/imgs/icons/library_books.png",
         headline: "Digital marketing and editorial support",
         text: "You don’t have to find out later or only after camenierk and trarsparent Easyamper ratains pliacas and beautias of your tariaary and halpin a fixed commission on each transaction of 5"
     },
     {
-        icon:"https://dazzling-squirrel-77a63d.netlify.app/imgs/icons/Compare-HSV.png",
+        icon: "https://dazzling-squirrel-77a63d.netlify.app/imgs/icons/Compare-HSV.png",
         headline: "Community of services dedicated to campers",
         text: "You don’t have to find out later or only after camenierk and trarsparent Easyamper ratains pliacas and beautias of your tariaary and halpin a fixed commission on each transaction of 5"
     },
 ]
 
-// Opret dit dataobjekt til footerens indhold herunder
+let footer = {
+    
+        headline: "easy Camper",
+        text0: "When passion meets comfort",
+        info: [
+    
+    {
+        headline1: "discover the network",
+        text: "Where to shop",
+        text2: "Tour Guided",
+        text3: "Our tours",
+        text4: "Abour us"
+    },
+    {
+        headline1: "Become a manager",
+        text: "join our pairing",
+        text2: "Offer your services",
+        text3: "are you a guide ?",
+
+    },
+    {
+        headline1: "Asistance",
+        text: "Supportcenter",
+        text2: "FAQ's",
+        text3: "Cancallation options",
+        text4: "Reliability & and sequrity"
+    },
+    {
+        text: "About",
+        text2: "Sitemap",
+        text3: "Terms",
+        text4: "privicy Policy",
+        text5: "Teams"
+    
+    },
+]
+}
+
+
