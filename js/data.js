@@ -96,41 +96,41 @@ let advantages = [
 ]
 
 let footer = {
-    
-        headline: "easy Camper",
-        text0: "When passion meets comfort",
-        info: [
-    
-    {
-        headline1: "discover the network",
-        text: "Where to shop",
-        text2: "Tour Guided",
-        text3: "Our tours",
-        text4: "Abour us"
-    },
-    {
-        headline1: "Become a manager",
-        text: "join our pairing",
-        text2: "Offer your services",
-        text3: "are you a guide ?",
 
-    },
-    {
-        headline1: "Asistance",
-        text: "Supportcenter",
-        text2: "FAQ's",
-        text3: "Cancallation options",
-        text4: "Reliability & and sequrity"
-    },
-    {
-        text: "About",
-        text2: "Sitemap",
-        text3: "Terms",
-        text4: "privicy Policy",
-        text5: "Teams"
-    
-    },
-]
+    headline: "easy Camper",
+    text0: "When passion meets comfort",
+    info: [
+
+        {
+            headline1: "discover the network",
+            text: "Where to shop",
+            text2: "Tour Guided",
+            text3: "Our tours",
+            text4: "Abour us"
+        },
+        {
+            headline1: "Become a manager",
+            text: "join our pairing",
+            text2: "Offer your services",
+            text3: "are you a guide ?",
+
+        },
+        {
+            headline1: "Asistance",
+            text: "Supportcenter",
+            text2: "FAQ's",
+            text3: "Cancallation options",
+            text4: "Reliability & and sequrity"
+        },
+        {
+            text: "About",
+            text2: "Sitemap",
+            text3: "Terms",
+            text4: "privicy Policy",
+            text5: "Teams"
+
+        },
+    ]
 }
 
 

@@ -11,50 +11,63 @@ let footerSection = document.querySelector(".footer");
 let heroDiv = document.createElement("div");
 let heroImg = document.createElement("img");
 heroImg.setAttribute("src", hero.image);
-let heroHeadline = document.createElement("h2");
-heroHeadline.textContent = `${hero.headline}`;
+let hsection = document.createElement("div");
+hsection.classList.add("herotext")
+let heroHead = document.createElement("h2");
+heroHead.textContent = `${hero.headline}`;
 let heroCopy = document.createElement("p");
 heroCopy.textContent = `${hero.copy}`;
-let heroIcon = document.createElement("icon");
+let heroIcon = document.createElement("img");
 heroIcon.setAttribute("src", hero.icon);
-heroSection.append(heroDiv, heroHeadline, heroCopy, heroIcon);
+let heroButton = document.createElement("button")
+heroButton.textContent = "Eksplore"
+heroButton.append(heroIcon)
+heroSection.append(heroDiv, hsection);
 heroDiv.append(heroImg);
+hsection.append(heroHead, heroCopy, heroButton);
 
 /****Services sektionen********/
 
-let serviceDiv = document.createElement("div");
+
 
 services.forEach(service => {
 
+    let serviceDiv = document.createElement("div");
     let serviceIll = document.createElement("img")
     serviceIll.setAttribute("src", service.illustration);
+    let serviceBox = document.createElement("div")
+    serviceBox.classList.add("sertext")
     let serviceHeadline = document.createElement("h2");
-    serviceHeadline.textContent = `${services.headline}`;
+    serviceHeadline.textContent = `${service.headline}`;
     let servicetxt = document.createElement("p");
-    servicetxt.textContent = `${services.copy}`;
-    let serviceLink = document.createElement("a")
-    serviceLink.setAttribute("src", service.linkText)
-    serviceSection.append(serviceDiv, serviceLink, serviceHeadline, servicetxt)
+    servicetxt.textContent = `${service.text}`;
+    let serviceLink = document.createElement("a");
+    serviceLink.textContent = `${service.linktext}`;
+    serviceSection.append(serviceBox);
     serviceDiv.append(serviceIll);
+    serviceBox.append(serviceDiv, serviceHeadline, servicetxt, serviceLink)
 })
 
 /*********Facilities sektion********/
 
-let facilityDiv = document.createElement("div");
+let facilityHeadline = document.createElement("h1");
+    facilityHeadline.textContent = `${facilities.headline}`;
+let flexDiv = document.createElement("div");
+    flexDiv.classList.add("flexwrapper");
+    facilitiesSection.append(facilityHeadline, flexDiv);
 
-let facHeadline = document.createElement("h2");
-facHeadline.textContent = `${facilities.headline}`;
+    facilities.options.forEach(facility => {
 
-facilities.options.forEach(facility => {
-    let facImg = document.createElement("img");
+let faDiv = document.createElement("div")
+    faDiv.classList.add("faoptions")
+let facImg = document.createElement("img");
     facImg.setAttribute("src", facility.icon);
-    let facHeadline = document.createElement("h2");
+let facHeadline = document.createElement("h2");
     facHeadline.textContent = `${facility.headline}`;
-    let facText = document.createElement("p");
+let facText = document.createElement("p");
     facText.textContent = `${facility.text}`;
-    facilitiesSection.append(facilityDiv, facHeadline, facText)
-    facilityDiv.append(facImg);
-
+    faDiv.append(facImg,facHeadline,facText);
+    flexDiv.append(faDiv); 
 })
 /******Sites sektionen*****/
 
@@ -104,9 +117,9 @@ let footerDiv = document.createElement("div");
 
 let footerHeadlineOne = document.createElement("h3");
 footerHeadlineOne.textContent = `${footer.headline}`;
-let footerText0 = document.createElement("h1"); 
+let footerText0 = document.createElement("h1");
 footerText0.textContent = `${footer.text0}`;
-footerSection.append(footerDiv,footerHeadlineOne,footerText0)
+footerSection.append(footerDiv, footerHeadlineOne, footerText0)
 
 footer.info.forEach(container3 => {
 
@@ -122,11 +135,11 @@ footer.info.forEach(container3 => {
     textFour.textContent = `${container3.text4}`;
     let textFive = document.createElement("p");
     textFive.textContent = `${container3.text5}`;
-    footerSection.append(footerDiv, footerHeadline2,firstText, secondText, thirdText,textFour,textFive)
-    
+    footerSection.append(footerDiv, footerHeadline2, firstText, secondText, thirdText, textFour, textFive)
+
     let ulOne = document.createElement("ul");
 
-    
+
     ulOne.appendChild(footerHeadline2);/* her sættes variablerne ind i en ul*/
 
     // Lægger alle  li'er ind i UL kassen - li er child af UL derfor bruges appendChild
