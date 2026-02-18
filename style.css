@@ -38,7 +38,7 @@ img {
 }
 
 .herotext h2 {
-    width: 75%;
+    width: 85%;
     font-family: "Merriweather", serif;
     font-optical-sizing: auto;
     font-weight: 900;
@@ -208,7 +208,7 @@ img {
     width: 100%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     margin-top: 200px;
 }
@@ -219,7 +219,7 @@ img {
     grid-row: 1;
     margin: 0 auto;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     flex-direction: column;
     gap: 40px;
 
@@ -298,4 +298,195 @@ img {
     height: 40px;
     color: black;
 
+}
+
+.advantage {
+    width: 100%;
+    display: flex;
+}
+
+.liste {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+.adv-card img {
+    width: 100px;
+    height: 85px;
+}
+
+.fordele {
+    font-size: 3rem;
+    margin-top: 50px;
+    margin-left: 100px;
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    margin-bottom: 50px;
+}
+
+.liste {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.adv-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.adv-card h2 {
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    font-size: 3rem;
+    flex-grow: 1;
+}
+
+.adv-card p {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+footer {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(214, 214, 214);
+    display: grid;
+    grid-template-columns: 25% 75%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.first {
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 200px;
+
+
+}
+
+.first h2 {
+    font-size: 2rem;
+    margin-top: 50px;
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    padding-bottom: 10px;
+}
+
+.first h1 {
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    font-size: 4rem;
+}
+
+.info {
+    width: 100%;
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    gap: 200px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.footer-card {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer-card h2 {
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    font-size: 1.7rem;
+    padding-bottom: 15px;
+}
+.footer-card p{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.7rem;
+    line-height: 2em;
+}
+.last{
+    width: 100%;
+    grid-column: 2;
+    grid-row: 2;
+}
+.bottom{
+    grid-column: 1/-1;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    
+   
+}
+.line1{
+   grid-column: 1; /* Den bliver i den første kolonne (25%) */
+    /* Nu kan du bruge margin til at finjustere herfra */
+    margin-left: 175px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 30px;
+    
+}
+.line2{
+    grid-column: 2; /* Den bliver i den store kolonne (75%) */
+    /* Du kan bruge margin eller text-align her */
+    margin-right: 200px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    border-top: 1px solid rgb(122, 122, 122);
+    width: 75%;
+   padding-top: 30px;
+}
+.orange-text {
+    color: #ff8c00; /* Din orange farve */
+    /* Du kan også tilføje andre ting her, hvis de orange ord skal skille sig ud */
+    font-weight: bold; 
 }

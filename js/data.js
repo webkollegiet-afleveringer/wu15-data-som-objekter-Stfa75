@@ -97,8 +97,8 @@ let advantages = [
 
 let footer = {
 
-    headline: "easy Camper",
-    text0: "When passion meets comfort",
+    headline: "Easy Camper",
+    text0: "When <br> passion <br> meets <br> comfort",
     info: [
 
         {
@@ -122,15 +122,15 @@ let footer = {
             text3: "Cancallation options",
             text4: "Reliability & and sequrity"
         },
-        {
-            text: "About",
-            text2: "Sitemap",
-            text3: "Terms",
-            text4: "privicy Policy",
-            text5: "Teams"
-
-        },
-    ]
+    ],
+    bottom: { // Vi laver en ny "nøgle" til bunden
+        text: "EazyCamper. All rights reserved.",
+        links: ["About", "Sitemap", "Terms", "Privacy Policy", "Teams"]
+    }
 }
+
+
+
+
 
 
